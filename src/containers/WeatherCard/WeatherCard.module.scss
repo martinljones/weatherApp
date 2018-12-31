@@ -8,6 +8,27 @@
     background-color: $base-white;
     margin: 21px auto 0 auto;
     animation: fadein 1s;
+    position: relative;
+}
+.whiteFrame::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 84px;
+    width: 146px;
+    left: -86px;
+    top: 141px;
+    background-image: url(../../assets/clouds/left-cloud.svg);
+}
+.whiteFrame::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 114px;
+    width: 208px;
+    right: -70px;
+    top: 71px;
+    background-image: url("../../assets/clouds/right-cloud.svg");
 }
 @keyframes fadein {
     from { opacity: 0; }
