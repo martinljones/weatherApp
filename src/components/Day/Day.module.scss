@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+
+.dayWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid $alto;
+    width: 20%;
+    height: 142px;
+  
+}
+.lastChild {
+    border-right: none;
+}
+.futureDay {
+    font-size: 14px;
+    color: $tundora;
+    margin-top: 16px;
+}
+.futureDay + img {
+    margin-top: 8px;
+}
+.futureTempHigh {
+    font-size: 24px;
+    color: $tundora;
+    position: relative;
+}
+.futureTempHigh::after {
+    content: "˚";
+    position: absolute;
+    right: 3px;
+    top: 4px;
+    width: 1px;
+}

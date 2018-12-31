@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+
+.whiteFrame {
+    height: 510px;
+    width: 670px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.2);
+    background-color: $base-white;
+    margin: 21px auto 0 auto;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.dallas {
+    background:url(../../assets/dallasBackground/dallas.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 368px;
+    background-repeat: no-repeat;
+}
+.topOfCardComponentWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-device-pixel-ratio: $image-2x-ratio),
+       (-webkit-min-device-pixel-ratio: $image-2x-ratio),
+       (min--moz-device-pixel-ratio: $image-2x-ratio),
+       (-o-min-device-pixel-ratio: $image-2x-ratio-o),
+       (min-resolution: $image-2x-ratio dppx){
+           .dallas {
+               background-image: url(../../assets/dallasBackground/dallas@2x.jpg);
+           }
+        }
+
+@media (min-device-pixel-ratio: $image-3x-ratio),
+       (-webkit-min-device-pixel-ratio: $image-3x-ratio),
+       (min--moz-device-pixel-ratio: $image-3x-ratio),
+       (-o-min-device-pixel-ratio: $image-3x-ratio-o),
+       (min-resolution: $image-3x-ratio dppx){
+           .dallas {
+               background-image: url(../../assets/dallasBackground/dallas@2x.jpg);
+           }
+       }
+
+@media all and (max-width:$screen-md-size) {
+    .whiteFrame {
+        width: 100%;
+        height: 100%;
+    }
+    .dallas {
+        height: 100%;
+        background-image: none;
+    }
+    .topOfCardComponentWrapper {
+        border-bottom: 1px solid $alto;
+    }
+}

@@ -1,0 +1,69 @@
+@import "../../variables.scss";
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.temperatureToggle {
+    margin-top: 31px;
+    margin-right: 20px;
+}
+label {
+	cursor: pointer;
+    width: 55px;
+    height: 25px;
+    display: block;
+    opacity: 0.65;
+	border-radius: 12px;
+    background-color: $curious-blue;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+}
+label:after {
+    content:"C˚";
+    text-align: center;
+    color: $curious-blue;
+    letter-spacing: -2px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 21px;
+    height: 21px;
+    background: $base-white;
+    border-radius: 12px;
+    transition: 0.1s;
+}
+label::before {
+    content:"F˚";
+    position: absolute;
+    right: 8px;
+    top:2px;
+    letter-spacing: -1px;
+    color: $base-white;
+}
+input:checked + label:before {
+    content:"C˚";
+    color: $base-white;
+    position: absolute;
+    z-index: 2;
+    left: 10.5px;
+    top:2px;
+    letter-spacing: -1px;
+    
+}
+input:checked + label:after {
+    content:"\00a0 F˚";
+    font-family: inherit;
+    font-weight: 600;
+    color: $curious-blue;
+    position: absolute;
+    letter-spacing: -2px;
+    text-align: center;
+	left: calc(100% - 3px);
+	transform: translateX(-100%);
+}
+label:active:after {
+	width: 55px;
+}

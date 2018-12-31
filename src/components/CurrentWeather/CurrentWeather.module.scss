@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+.currentWeather {
+    display: flex;
+}
+.summaryWrapper {
+    margin-left: 13px;
+    margin-top: 40.5px;
+}
+.temperature {
+    color: $shakespeare;
+    font-size: 48px;
+    font-weight: normal;
+    position: relative;
+    margin-left: 28px;
+    margin-top: 26.5px;
+}
+.temperature + img {
+    margin-top: 26.5px;
+    margin-left: 14.8px;
+}
+.temperature::after{
+    content: "˚";
+    position: absolute;
+    right: -20px;
+    top: 7px;
+}
+.summary,
+.windSpeed {
+    font-size: 14px;
+    font-weight: 600;
+    color: $shakespeare;
+}

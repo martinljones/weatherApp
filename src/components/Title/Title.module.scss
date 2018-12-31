@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 122px;
+    text-align: center;
+}
+.location {
+    height: 24px;
+    width: 100%;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: $base-white;
+}
+.location::before {
+    content:"";
+    display: inline-block;
+    background-image: url("../../assets/location-on-material.svg");
+    width: 12px;
+    height: 14px;
+    margin-right: 6px;
+}
+.date {
+    height: 19px;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    color: $base-white;
+}
