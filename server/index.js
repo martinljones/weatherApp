@@ -8,7 +8,7 @@ const express = require("express"),
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use(express.static(`${__dirname}/../build/`));
+app.use(express.static(`${__dirname}/../build`));
 masterRoutes(app);
 
 app.listen(port, () => console.log(`Listening on ${port}`));
