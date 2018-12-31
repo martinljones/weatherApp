@@ -1,6 +1,9 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
+  "engine":{
+    "node": "11.6.0"
+  },
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
