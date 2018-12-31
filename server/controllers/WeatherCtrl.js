@@ -19,7 +19,8 @@ async function getDallasDailyForcast (req, res) {
     try {
         response = await _getDallasDailyForcastFromExternalApi(unitOfMeasure);
     }
-    catch(erorr) {
+    catch(error) {
+        console.error(error);
         return res.status(500).send("Unable to fetch weather for dallas.");
     }
     return res.status(200).send(response.data);
