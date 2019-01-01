@@ -14,6 +14,7 @@
 ##### Installation
 If you want to pull the repository down and run locally, the node server needs to be ran. Run the following commands.
 ```
+npm install
 npm run build
 node server/index.js
 ```
