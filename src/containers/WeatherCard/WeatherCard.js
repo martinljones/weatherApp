@@ -74,7 +74,7 @@ class WeatherCard extends Component {
     async getCurrentWeatherInDallas(currentUnitOfMeasure) {
         let response;
          try {
-            response = await axios.get(`/api/WeatherCtrl/getDallasDailyForcast/${currentUnitOfMeasure}`)
+            response = await axios.get(`http://localhost:3001/api/WeatherCtrl/getDallasDailyForcast/${currentUnitOfMeasure}`)
          }
          catch(error) {
              console.error(error);
