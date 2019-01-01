@@ -9,7 +9,7 @@
   - Heroku (Hosting)
 
 ##### Heroku Link
- - [Weather App](http://www.dallas-weather.herokuapp.com)
+ - [Weather App](www.dallas-weather.herokuapp.com)
 
 ##### Installation
 If you want to pull the repository down and run locally, the node server needs to be ran. Run the following commands.
