@@ -31,3 +31,15 @@
     font-weight: 600;
     color: $shakespeare;
 }
+
+@media all and (max-width:$screen-md-size) {
+    .temperature + img,
+    .summaryWrapper,
+    .temperature {
+        margin-top: 0;
+        height: inherit;
+    }
+    .currentWeather {
+        align-items: center;
+    }
+}

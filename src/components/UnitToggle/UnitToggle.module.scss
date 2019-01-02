@@ -67,3 +67,9 @@ input:checked + label:after {
 label:active:after {
 	width: 55px;
 }
+
+@media all and (max-width:$screen-md-size) {
+    .temperatureToggle {
+        margin-top: 0;
+    }
+}
